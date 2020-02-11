@@ -20,6 +20,7 @@ eureka:
 
 zuul:
   retryable: true
+  sensitive-headers: 
     
 ribbon:
   ConnectTimeout: 1000
@@ -33,7 +34,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 500
+            timeoutInMilliseconds: 1000
             
 management:
   endpoints:
